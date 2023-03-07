@@ -1,4 +1,4 @@
-package org.example;
+package stream;
 
 public class Transaction {
 
