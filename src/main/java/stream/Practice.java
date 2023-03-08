@@ -47,7 +47,7 @@ public class Practice {
                 .map(Trader::getName)
                 .sorted()
                 .distinct()
-                .collect(Collectors.joining(","));
+                .collect(Collectors.joining(",:::::"));
 
         System.out.println(collect);
     }
