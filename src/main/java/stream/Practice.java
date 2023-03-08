@@ -42,12 +42,12 @@ public class Practice {
 
     /*모든 거래자의 이름을 알파벳 순으로 정렬해서 반환하시오.*/
     public void pratice4(List<Transaction> transactions) {
-        List<String> collect = transactions.stream()
-            .map(Transaction::getTrader)
-            .map(Trader::getName)
-            .sorted()
-            .distinct()
-            .collect(Collectors.toList());
+        String collect = transactions.stream()
+                .map(Transaction::getTrader)
+                .map(Trader::getName)
+                .sorted()
+                .distinct()
+                .collect(Collectors.joining(","));
 
         System.out.println(collect);
     }
